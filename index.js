@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var app = require('./app');
 
-var port = 3000;
+var port = 3001;
 
 mongoose.connect('mongodb://localhost:27017/paciente', {useNewUrlParser:true, useUnifiedTopology:true}).then(()=>{
     console.log('mongo is connected');

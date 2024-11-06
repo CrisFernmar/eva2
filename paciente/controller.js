@@ -4,7 +4,6 @@ var fs = require('fs');
 var path = require('path');
 
 var controller = {
-   //Para crear un nuevo objeto de tipo Paciente
    new: async (req, res) => {
     var params = req.body; 
     try {
@@ -16,7 +15,7 @@ var controller = {
     } catch (err) {
         return res.status(400).send({
             status: 'error',
-            message: 'Faltan datos'
+            message: 'Faltan datos revisalos'
         });
     }
 
